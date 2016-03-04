@@ -1,5 +1,5 @@
 .heading {
-  margin-top: 140px;
+  margin-top: 200px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -12,18 +12,17 @@
     margin: 0;
     font-size: 7.5em;
     font-family: 'Playfair Display', serif;
-    height: 140px;
   }
   p {
-    padding-top: 20px;
-    font-size: 1.2em;
-    margin: 0px;
+    font-size: 1.4em;
+    margin-top: 30px;
+    margin-bottom: 0px;
     text-transform: uppercase;
     font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 5px;
   }
-
   img {
-    height: 85px;
+    height: 75px;
     width: 85px;
     align-self: center;
   }
@@ -34,21 +33,26 @@
     border: 2px solid white;
   }
 
-  .explore {
-    text-transform: uppercase;
-    font-size: 12px;
-    letter-spacing: 2px;
-    padding: 20px;
-    background: $accent-orange;
-    margin-top: 100px;
+  .orange-box {
+    @media (max-width: 760px) {
+      display: none;
+    }
+    .explore {
+      text-transform: uppercase;
+      font-size: 10px;
+      padding: 20px;
+      background: $accent-orange;
+      border-radius: 2px;
+      margin-top: 110px;
+      p {
+        padding-top: 0px;
+        margin: 0px;
+      }
+    }
+    img.point {
+      height: 14px;
+      width: 50px;
+      align-self: center;
+    }
   }
-  p {
-    padding-top: 0px;
-  }
-  img.point {
-    height: 25px;
-    width: 40px;
-    align-self: center;
-  }
-
 }
