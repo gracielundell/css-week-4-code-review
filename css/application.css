@@ -53,64 +53,49 @@
   min-height: 100vh; }
 
 .navbar {
-  flex-direction: column;
   display: flex;
   padding-top: 40px;
   width: 90%;
   margin: 0 auto;
-  height: 80vh;
-  border: 1px solid lime; }
-  .navbar li {
-    list-style: none;
-    display: inline;
-    text-transform: uppercase;
+  border: 1px solid lime;
+  justify-content: space-between; }
+  .navbar img {
+    width: 50px;
+    height: 50px; }
+  .navbar p {
     color: white;
-    font-family: 'Playfair Display', serif;
-    margin-left: 10px;
-    text-align: right;
-    padding-top: 30px;
-    justify-content: space-between; }
-    @media (max-width: 1050px) {
-      .navbar li {
+    font-size: 30px;
+    margin: 0px;
+    padding: 20px; }
+  .navbar i {
+    color: white;
+    padding: 20px; }
+    @media (min-width: 900px) {
+      .navbar i {
         display: none; } }
-  .navbar li:nth-child(2) {
-    font-size: 1.5em;
-    font-family: 'Playfair Display', serif;
-    padding-top: 22px;
-    margin-right: 150px; }
-    @media (max-width: 1050px) {
-      .navbar li:nth-child(2) {
-        display: inline;
-        margin-left: 0; } }
-
-img {
-  width: 50px;
-  height: 50px; }
-
-li:last-child {
-  display: none; }
-  @media (max-width: 1050px) {
-    li:last-child {
-      display: inline; } }
-
-i {
-  color: white;
-  padding: 20px; }
 
 ul {
   border: 1px solid red;
   padding: 0;
   display: flex;
-  justify-content: space-between;
-  height: 100px;
-  width: 1000px;
-  margin: 0 auto; }
-  @media (max-width: 1050px) {
-    ul {
-      width: 80%; } }
+  height: 50px;
+  width: 420px;
+  justify-content: flex-end; }
+  ul li {
+    list-style: none;
+    display: inline;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    margin-left: 10px;
+    padding-top: 30px;
+    justify-content: space-between; }
+    @media (max-width: 900px) {
+      ul li {
+        display: none; } }
 
 .heading {
-  margin-top: 100px;
+  margin-top: 140px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -125,6 +110,7 @@ ul {
     font-family: 'Playfair Display', serif;
     height: 140px; }
   .heading p {
+    padding-top: 20px;
     font-size: 1.2em;
     margin: 0px;
     text-transform: uppercase;
