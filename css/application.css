@@ -59,14 +59,13 @@
   margin: 0 auto;
   border: 1px solid lime;
   justify-content: space-between; }
-  .navbar img {
-    width: 50px;
-    height: 50px; }
   .navbar p {
     color: white;
     font-size: 30px;
-    margin: 0px;
-    padding: 20px; }
+    margin: 0px; }
+  .navbar img {
+    width: 50px;
+    height: 50px; }
   .navbar i {
     color: white;
     padding: 20px; }
@@ -130,6 +129,8 @@ ul {
     padding: 20px;
     background: #DC7725;
     margin-top: 100px; }
+  .heading p {
+    padding-top: 0px; }
   .heading img.point {
     height: 25px;
     width: 40px;
