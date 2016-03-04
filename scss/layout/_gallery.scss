@@ -7,7 +7,6 @@ body {
   width: 100%;
   flex-wrap: wrap;
   font-family: 'Fjalla One', sans-serif;
-
 }
 
 .row {
@@ -24,6 +23,7 @@ body {
   @extend %gal-image-flex;
   background-image: url('#{$path-img}/raft.jpg');
   @include img-size(cover, 450px, 50%);
+  @extend %gal-hr-p;
   @media (max-width: 666px) {
     width: 90%;
     height: 82vh;
@@ -37,25 +37,11 @@ body {
     @extend %link-flex;
   }
 
-  hr {
-    align-self: flex-start;
-    background: $accent-orange;
-    border: 0px solid $accent-orange;
-    margin-left: 10px;
-  }
-  p {
-    align-self: flex-start;
-    padding-left: 10px;
-    color: white;
-    font-size: 20px;
-    margin-bottom: 30px;
-    margin-top: 0px;
-    text-transform: uppercase;
-  }
 
 .gal-image2 {
   @extend %gal-image-flex;
   background-image: url('#{$path-img}/camp.jpg');
+  @extend %gal-hr-p;
   @include img-size(cover, 450px, 25%);
 
   // @media (max-width: 768px) {
@@ -81,6 +67,7 @@ body {
 .gal-image3 {
   @extend %gal-image-flex;
   background-image: url('#{$path-img}/lady.jpg');
+  @extend %gal-hr-p;
   @include img-size(cover, 450px, 25%);
   // @media (max-width: 768px) {
   //   flex-direction: row;
@@ -107,6 +94,7 @@ body {
   @extend %gal-image-flex;
   background-image: url('#{$path-img}/canoe.jpg');
   @include img-size(cover, 450px, 25%);
+  @extend %gal-hr-p;
   @media (max-width: 666px) {
     width: 90%;
     height: 82vh;
@@ -118,12 +106,12 @@ body {
   .link {
     @extend %link-flex;
   }
-
 }
 
 .gal-image5 {
   @extend %gal-image-flex;
   background-image: url('#{$path-img}/photo.jpg');
+  @extend %gal-hr-p;
   @include img-size(cover, 450px, 25%);
   @media (max-width: 666px) {
     width: 90%;
@@ -143,6 +131,7 @@ body {
   width: 50%;
   background-image: url('#{$path-img}/custom.jpg');
   @include img-size(cover, 450px, 50%);
+  @extend %gal-hr-p;
   @media (max-width: 666px) {
     width: 90%;
     height: 82vh;

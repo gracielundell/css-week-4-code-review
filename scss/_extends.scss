@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: flex-end;
   flex-direction: column;
+  background-position: center;
 }
 
 %circle-hover {
@@ -16,6 +17,27 @@
   text-decoration: none;
   color: white;
 }
+
+%gal-hr-p {
+  hr {
+    align-self: flex-start;
+    background: $accent-orange;
+    border: 2px solid $accent-orange;
+    margin-left: 20px;
+    width: 40px;
+  }
+  p {
+    align-self: flex-start;
+    padding-left: 20px;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    text-transform: uppercase;
+  }
+}
+
+
 
 %link-flex {
   display: flex;

@@ -4,16 +4,20 @@
   flex-direction: column;
   text-align: center;
   justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
   height: 30vh;
   color: white;
   h1 {
     margin: 0;
     font-size: 7.5em;
     font-family: 'Playfair Display', serif;
+    height: 140px;
+
   }
   p {
-    font-size: 1.8em;
-    margin: 0;
+    font-size: 1.2em;
+    margin: 0px;
     text-transform: uppercase;
     font-family: 'Fjalla One', sans-serif;
   }
@@ -24,10 +28,9 @@
     align-self: center;
   }
 
-}
-
-hr {
-  width: 20%;
-  height: 4px;
-  background: white;
+  hr {
+    width: 250px;
+    background: white;
+    border: 2px solid white;
+  }
 }

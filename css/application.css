@@ -2,7 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  flex-direction: column; }
+  flex-direction: column;
+  background-position: center; }
 
 .gal-image1:hover, .gal-image2:hover, .gal-image3:hover, .gal-image4:hover, .gal-image5:hover, .gal-image6:hover {
   cursor: pointer; }
@@ -12,6 +13,21 @@
 .link a, .gal-image2 .link a, .gal-image3 .link a, .gal-image4 .link a, .gal-image5 .link a, .gal-image6 .link a {
   text-decoration: none;
   color: white; }
+
+.gal-image1 hr, .gal-image2 hr, .gal-image3 hr, .gal-image4 hr, .gal-image5 hr, .gal-image6 hr {
+  align-self: flex-start;
+  background: #DC7725;
+  border: 2px solid #DC7725;
+  margin-left: 20px;
+  width: 40px; }
+.gal-image1 p, .gal-image2 p, .gal-image3 p, .gal-image4 p, .gal-image5 p, .gal-image6 p {
+  align-self: flex-start;
+  padding-left: 20px;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 30px;
+  margin-top: 0px;
+  text-transform: uppercase; }
 
 .link, .gal-image2 .link, .gal-image3 .link, .gal-image4 .link, .gal-image5 .link, .gal-image6 .link {
   display: flex;
@@ -41,7 +57,9 @@
   display: flex;
   padding-top: 40px;
   width: 90%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  height: 80vh;
+  border: 1px solid lime; }
   .navbar li {
     list-style: none;
     display: inline;
@@ -97,26 +115,28 @@ ul {
   flex-direction: column;
   text-align: center;
   justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
   height: 30vh;
   color: white; }
   .heading h1 {
     margin: 0;
     font-size: 7.5em;
-    font-family: 'Playfair Display', serif; }
+    font-family: 'Playfair Display', serif;
+    height: 140px; }
   .heading p {
-    font-size: 1.8em;
-    margin: 0;
+    font-size: 1.2em;
+    margin: 0px;
     text-transform: uppercase;
     font-family: 'Fjalla One', sans-serif; }
   .heading img {
     height: 85px;
     width: 85px;
     align-self: center; }
-
-hr {
-  width: 20%;
-  height: 4px;
-  background: white; }
+  .heading hr {
+    width: 250px;
+    background: white;
+    border: 2px solid white; }
 
 body {
   margin: 0; }
@@ -146,21 +166,6 @@ body {
       width: 90%;
       height: 82vh;
       margin: 20px auto; } }
-
-hr {
-  align-self: flex-start;
-  background: #DC7725;
-  border: 0px solid #DC7725;
-  margin-left: 10px; }
-
-p {
-  align-self: flex-start;
-  padding-left: 10px;
-  color: white;
-  font-size: 20px;
-  margin-bottom: 30px;
-  margin-top: 0px;
-  text-transform: uppercase; }
 
 .gal-image2 {
   background-image: url("../img/camp.jpg");
