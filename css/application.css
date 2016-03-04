@@ -1,0 +1,221 @@
+.gal-image1, .gal-image2, .gal-image3, .gal-image4, .gal-image5, .gal-image6 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column; }
+
+.gal-image1:hover, .gal-image2:hover, .gal-image3:hover, .gal-image4:hover, .gal-image5:hover, .gal-image6:hover {
+  cursor: pointer; }
+  .gal-image1:hover .link, .gal-image2:hover .link, .gal-image3:hover .link, .gal-image4:hover .link, .gal-image5:hover .link, .gal-image6:hover .link {
+    transform: scale(1.3); }
+
+.link a, .gal-image2 .link a, .gal-image3 .link a, .gal-image4 .link a, .gal-image5 .link a, .gal-image6 .link a {
+  text-decoration: none;
+  color: white; }
+
+.link, .gal-image2 .link, .gal-image3 .link, .gal-image4 .link, .gal-image5 .link, .gal-image6 .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 40px;
+  background-color: #343433;
+  border-radius: 50%;
+  padding: 20px;
+  width: 50px;
+  height: 50px;
+  opacity: 0.8;
+  transition: all .3s; }
+  .link a img, .gal-image2 .link a img, .gal-image3 .link a img, .gal-image4 .link a img, .gal-image5 .link a img, .gal-image6 .link a img {
+    width: 40px;
+    height: 40px; }
+
+.wrapper {
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh; }
+
+.navbar {
+  flex-direction: column;
+  display: flex;
+  padding-top: 40px;
+  width: 90%;
+  margin: 0 auto; }
+  .navbar li {
+    list-style: none;
+    display: inline;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    margin-left: 10px;
+    text-align: right;
+    padding-top: 30px;
+    justify-content: space-between; }
+    @media (max-width: 1050px) {
+      .navbar li {
+        display: none; } }
+  .navbar li:nth-child(2) {
+    font-size: 1.5em;
+    font-family: 'Playfair Display', serif;
+    padding-top: 22px;
+    margin-right: 150px; }
+    @media (max-width: 1050px) {
+      .navbar li:nth-child(2) {
+        display: inline;
+        margin-left: 0; } }
+
+img {
+  width: 50px;
+  height: 50px; }
+
+li:last-child {
+  display: none; }
+  @media (max-width: 1050px) {
+    li:last-child {
+      display: inline; } }
+
+i {
+  color: white;
+  padding: 20px; }
+
+ul {
+  border: 1px solid red;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  width: 1000px;
+  margin: 0 auto; }
+  @media (max-width: 1050px) {
+    ul {
+      width: 80%; } }
+
+.heading {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: 30vh;
+  color: white; }
+  .heading h1 {
+    margin: 0;
+    font-size: 7.5em;
+    font-family: 'Playfair Display', serif; }
+  .heading p {
+    font-size: 1.8em;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif; }
+  .heading img {
+    height: 85px;
+    width: 85px;
+    align-self: center; }
+
+hr {
+  width: 20%;
+  height: 4px;
+  background: white; }
+
+body {
+  margin: 0; }
+
+.container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  font-family: 'Fjalla One', sans-serif; }
+
+.row {
+  display: flex;
+  width: 100%;
+  height: 450px; }
+  @media (max-width: 666px) {
+    .row {
+      flex-direction: column;
+      height: 82vh; } }
+
+.gal-image1 {
+  background-image: url("../img/raft.jpg");
+  background-size: cover;
+  height: 450px;
+  width: 50%; }
+  @media (max-width: 666px) {
+    .gal-image1 {
+      width: 90%;
+      height: 82vh;
+      margin: 20px auto; } }
+
+hr {
+  align-self: flex-start;
+  background: #DC7725;
+  border: 0px solid #DC7725;
+  margin-left: 10px; }
+
+p {
+  align-self: flex-start;
+  padding-left: 10px;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 30px;
+  margin-top: 0px;
+  text-transform: uppercase; }
+
+.gal-image2 {
+  background-image: url("../img/camp.jpg");
+  background-size: cover;
+  height: 450px;
+  width: 25%; }
+  @media (max-width: 666px) {
+    .gal-image2 {
+      width: 90%;
+      height: 82vh;
+      margin: 20px auto; } }
+
+.gal-image3 {
+  background-image: url("../img/lady.jpg");
+  background-size: cover;
+  height: 450px;
+  width: 25%; }
+  @media (max-width: 666px) {
+    .gal-image3 {
+      width: 90%;
+      height: 82vh;
+      margin: 20px auto; } }
+
+.gal-image4 {
+  background-image: url("../img/canoe.jpg");
+  background-size: cover;
+  height: 450px;
+  width: 25%; }
+  @media (max-width: 666px) {
+    .gal-image4 {
+      width: 90%;
+      height: 82vh;
+      margin: 20px auto; } }
+
+.gal-image5 {
+  background-image: url("../img/photo.jpg");
+  background-size: cover;
+  height: 450px;
+  width: 25%; }
+  @media (max-width: 666px) {
+    .gal-image5 {
+      width: 90%;
+      height: 82vh;
+      margin: 20px auto; } }
+
+.gal-image6 {
+  width: 50%;
+  background-image: url("../img/custom.jpg");
+  background-size: cover;
+  height: 450px;
+  width: 50%; }
+  @media (max-width: 666px) {
+    .gal-image6 {
+      width: 90%;
+      height: 82vh;
+      margin: 20px auto; } }
+
+/*# sourceMappingURL=application.css.map */

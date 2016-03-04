@@ -1,0 +1,33 @@
+.heading {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: 30vh;
+  color: white;
+  h1 {
+    margin: 0;
+    font-size: 7.5em;
+    font-family: 'Playfair Display', serif;
+  }
+  p {
+    font-size: 1.8em;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif;
+  }
+
+  img {
+    height: 85px;
+    width: 85px;
+    align-self: center;
+  }
+
+}
+
+hr {
+  width: 20%;
+  height: 4px;
+  background: white;
+}
