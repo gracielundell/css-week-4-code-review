@@ -8,18 +8,26 @@
 .navbar {
   display:flex;
   padding-top: 40px;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   justify-content: space-between;
 
   p {
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     margin: 0px;
+    text-transform: uppercase;
+    @media (max-width: 960px) {
+      font-size: 17px;
+    }
   }
   img {
     width:50px;
     height: 50px;
+    @media (max-width: 960px) {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   i {

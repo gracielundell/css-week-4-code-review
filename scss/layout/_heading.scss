@@ -1,10 +1,7 @@
 .heading {
+  @extend %heading-flex;
   margin-top: 200px;
-  display: flex;
-  flex-direction: column;
   text-align: center;
-  justify-content: center;
-  align-items: center;
   flex-wrap: nowrap;
   height: 30vh;
   color: white;
@@ -12,6 +9,10 @@
     margin: 0;
     font-size: 7.5em;
     font-family: 'Playfair Display', serif;
+    @media (max-width: 960px) {
+      font-size: 3em;
+      padding-bottom: 13px;
+    }
   }
   p {
     font-size: 1.4em;
@@ -20,10 +21,12 @@
     text-transform: uppercase;
     font-family: 'Fjalla One', sans-serif;
     letter-spacing: 5px;
+    @media (max-width: 960px) {
+      font-size: .7em;
+    }
   }
   img {
-    height: 75px;
-    width: 85px;
+    @include dimensions(75px, 85px);
     align-self: center;
   }
 

@@ -1,3 +1,9 @@
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
 .gal-image1, .gal-image2, .gal-image3, .gal-image4, .gal-image5, .gal-image6 {
   display: flex;
   align-items: center;
@@ -55,16 +61,24 @@
 .navbar {
   display: flex;
   padding-top: 40px;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   justify-content: space-between; }
   .navbar p {
     color: white;
-    font-size: 30px;
-    margin: 0px; }
+    font-size: 25px;
+    margin: 0px;
+    text-transform: uppercase; }
+    @media (max-width: 960px) {
+      .navbar p {
+        font-size: 17px; } }
   .navbar img {
     width: 50px;
     height: 50px; }
+    @media (max-width: 960px) {
+      .navbar img {
+        width: 40px;
+        height: 40px; } }
   .navbar i {
     color: white;
     padding: 10px;
@@ -97,11 +111,7 @@ ul {
 
 .heading {
   margin-top: 200px;
-  display: flex;
-  flex-direction: column;
   text-align: center;
-  justify-content: center;
-  align-items: center;
   flex-wrap: nowrap;
   height: 30vh;
   color: white; }
@@ -109,6 +119,10 @@ ul {
     margin: 0;
     font-size: 7.5em;
     font-family: 'Playfair Display', serif; }
+    @media (max-width: 960px) {
+      .heading h1 {
+        font-size: 3em;
+        padding-bottom: 13px; } }
   .heading p {
     font-size: 1.4em;
     margin-top: 30px;
@@ -116,6 +130,9 @@ ul {
     text-transform: uppercase;
     font-family: 'Fjalla One', sans-serif;
     letter-spacing: 5px; }
+    @media (max-width: 960px) {
+      .heading p {
+        font-size: .7em; } }
   .heading img {
     height: 75px;
     width: 85px;
@@ -144,6 +161,9 @@ ul {
 
 body {
   margin: 0; }
+  @media (max-width: 666px) {
+    body {
+      background: #c4c4c4; } }
 
 .container {
   display: flex;
@@ -153,8 +173,8 @@ body {
 
 .row {
   display: flex;
-  width: 100%;
-  height: 420px; }
+  height: 420px;
+  width: 100%; }
   @media (max-width: 666px) {
     .row {
       flex-direction: column;
@@ -167,9 +187,10 @@ body {
   width: 50%; }
   @media (max-width: 666px) {
     .gal-image1 {
-      width: 90%;
       height: 82vh;
-      margin: 20px auto; } }
+      width: 90%;
+      margin: 20px auto;
+      align-items: center; } }
 
 .gal-image2 {
   background-image: url("../img/camp.jpg");
@@ -178,8 +199,8 @@ body {
   width: 25%; }
   @media (max-width: 666px) {
     .gal-image2 {
-      width: 90%;
       height: 82vh;
+      width: 90%;
       margin: 20px auto; } }
 
 .gal-image3 {
@@ -189,8 +210,8 @@ body {
   width: 25%; }
   @media (max-width: 666px) {
     .gal-image3 {
-      width: 90%;
       height: 82vh;
+      width: 90%;
       margin: 20px auto; } }
 
 .gal-image4 {
@@ -200,8 +221,8 @@ body {
   width: 25%; }
   @media (max-width: 666px) {
     .gal-image4 {
-      width: 90%;
       height: 82vh;
+      width: 90%;
       margin: 20px auto; } }
 
 .gal-image5 {
@@ -211,8 +232,8 @@ body {
   width: 25%; }
   @media (max-width: 666px) {
     .gal-image5 {
-      width: 90%;
       height: 82vh;
+      width: 90%;
       margin: 20px auto; } }
 
 .gal-image6 {
@@ -223,8 +244,8 @@ body {
   width: 50%; }
   @media (max-width: 666px) {
     .gal-image6 {
-      width: 90%;
       height: 82vh;
+      width: 90%;
       margin: 20px auto; } }
 
 .lower-navbar {
@@ -254,7 +275,6 @@ body {
     color: white;
     font-weight: bold; }
   .lower-navbar li:last-child {
-    border-left: 2px solid #c4c4c4;
     color: #DC7725; }
     .lower-navbar li:last-child i {
       color: #DC7725;
