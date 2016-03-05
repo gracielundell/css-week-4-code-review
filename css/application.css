@@ -40,7 +40,6 @@
   align-items: center;
   justify-content: center;
   margin: auto;
-  padding: 40px;
   background-color: #343433;
   border-radius: 50%;
   padding: 20px;
@@ -57,9 +56,9 @@
   background-size: cover;
   width: 100%;
   min-height: 100vh; }
-  @media (max-width: 666px) {
+  @media (max-width: 960px) {
     .wrapper {
-      min-height: 66.5vh; } }
+      min-height: 65vh; } }
 
 .navbar {
   display: flex;
@@ -122,14 +121,24 @@ ul {
   flex-wrap: nowrap;
   height: 30vh;
   color: white; }
+  @media (max-width: 960px) {
+    .heading {
+      margin-top: 90px; } }
+  @media (max-width: 760px) {
+    .heading {
+      margin-top: 25px; } }
   @media (max-width: 666px) {
     .heading {
-      margin-top: 10px; } }
+      margin-top: 25px; } }
   .heading h1 {
     margin: 0;
     font-size: 7.5em;
     font-family: 'Playfair Display', serif; }
     @media (max-width: 960px) {
+      .heading h1 {
+        font-size: 5em;
+        padding-bottom: 13px; } }
+    @media (max-width: 760px) {
       .heading h1 {
         font-size: 3em;
         padding-bottom: 13px; } }
@@ -142,7 +151,15 @@ ul {
     letter-spacing: 5px; }
     @media (max-width: 960px) {
       .heading p {
-        font-size: .7em; } }
+        font-size: 1.1em;
+        margin-top: 9px; } }
+    @media (max-width: 760px) {
+      .heading p {
+        font-size: .8em;
+        letter-spacing: 3px; } }
+    @media (max-width: 666px) {
+      .heading p {
+        margin-top: 10px; } }
   .heading img {
     height: 75px;
     width: 85px;
@@ -151,7 +168,7 @@ ul {
     width: 250px;
     background: white;
     border: 2px solid white; }
-  @media (max-width: 760px) {
+  @media (max-width: 768px) {
     .heading .orange-box {
       display: none; } }
   .heading .orange-box .explore {
@@ -161,6 +178,9 @@ ul {
     background: #DC7725;
     border-radius: 2px;
     margin-top: 110px; }
+    @media (max-width: 960px) {
+      .heading .orange-box .explore {
+        margin-top: 10px; } }
     .heading .orange-box .explore p {
       padding-top: 0px;
       margin: 0px; }
@@ -171,9 +191,9 @@ ul {
 
 body {
   margin: 0; }
-  @media (max-width: 666px) {
+  @media (max-width: 900px) {
     body {
-      background: #c4c4c4; } }
+      background: #D1D1C9; } }
 
 .container {
   display: flex;
@@ -185,26 +205,32 @@ body {
   display: flex;
   height: 420px;
   width: 100%; }
+  @media (max-width: 900px) {
+    .row {
+      height: 400px; } }
   @media (max-width: 666px) {
     .row {
       flex-direction: column;
-      height: 80vh; } }
+      height: 107vh; } }
 
 .gal-image1 {
   background-image: url("../img/raft.jpg");
   background-size: cover;
   height: 450px;
   width: 50%; }
-  @media (max-width: 666px) {
+  @media (max-width: 900px) {
     .gal-image1 {
-      height: 82vh;
+      height: 50vh;
       width: 90%;
-      margin: 20px auto; } }
-  @media (max-width: 666px) {
+      margin: 20px auto 0px auto; } }
+  @media (max-width: 760px) {
+    .gal-image1 {
+      margin-top: 39px; } }
+  @media (max-width: 900px) {
     .gal-image1:hover .link {
       transform: scale(1.3); } }
 
-@media (max-width: 666px) {
+@media (max-width: 900px) {
   .link {
     align-items: center;
     justify-content: center;
@@ -214,21 +240,27 @@ body {
     .link a img {
       width: 34px;
       height: 34px; } }
+@media (max-width: 666px) {
+  .link {
+    margin-bottom: 15px; } }
 
 .gal-image2 {
   background-image: url("../img/camp.jpg");
   background-size: cover;
   height: 450px;
   width: 25%; }
-  @media (max-width: 666px) {
+  @media (max-width: 900px) {
     .gal-image2 {
-      height: 82vh;
+      height: 50vh;
       width: 90%;
-      margin: 20px auto; } }
-  @media (max-width: 666px) {
+      margin: 20px auto 0px auto; } }
+  @media (max-width: 760px) {
+    .gal-image2 {
+      margin-top: 39px; } }
+  @media (max-width: 900px) {
     .gal-image2:hover .link {
       transform: scale(1.3); } }
-  @media (max-width: 666px) {
+  @media (max-width: 900px) {
     .gal-image2 .link {
       align-items: center;
       justify-content: center;
@@ -238,21 +270,27 @@ body {
       .gal-image2 .link a img {
         width: 34px;
         height: 34px; } }
+  @media (max-width: 666px) {
+    .gal-image2 .link {
+      margin-bottom: 15px; } }
 
 .gal-image3 {
   background-image: url("../img/lady.jpg");
   background-size: cover;
   height: 450px;
   width: 25%; }
-  @media (max-width: 666px) {
+  @media (max-width: 900px) {
     .gal-image3 {
-      height: 82vh;
+      height: 50vh;
       width: 90%;
-      margin: 20px auto; } }
-  @media (max-width: 666px) {
+      margin: 20px auto 0px auto; } }
+  @media (max-width: 760px) {
+    .gal-image3 {
+      margin-top: 39px; } }
+  @media (max-width: 900px) {
     .gal-image3:hover .link {
       transform: scale(1.3); } }
-  @media (max-width: 666px) {
+  @media (max-width: 900px) {
     .gal-image3 .link {
       align-items: center;
       justify-content: center;
@@ -262,21 +300,27 @@ body {
       .gal-image3 .link a img {
         width: 34px;
         height: 34px; } }
+  @media (max-width: 666px) {
+    .gal-image3 .link {
+      margin-bottom: 15px; } }
 
 .gal-image4 {
   background-image: url("../img/canoe.jpg");
   background-size: cover;
   height: 450px;
   width: 25%; }
-  @media (max-width: 666px) {
+  @media (max-width: 900px) {
     .gal-image4 {
-      height: 82vh;
+      height: 50vh;
       width: 90%;
-      margin: 20px auto; } }
-  @media (max-width: 666px) {
+      margin: 20px auto 0px auto; } }
+  @media (max-width: 760px) {
+    .gal-image4 {
+      margin-top: 39px; } }
+  @media (max-width: 900px) {
     .gal-image4:hover .link {
       transform: scale(1.3); } }
-  @media (max-width: 666px) {
+  @media (max-width: 900px) {
     .gal-image4 .link {
       align-items: center;
       justify-content: center;
@@ -286,21 +330,27 @@ body {
       .gal-image4 .link a img {
         width: 34px;
         height: 34px; } }
+  @media (max-width: 666px) {
+    .gal-image4 .link {
+      margin-bottom: 15px; } }
 
 .gal-image5 {
   background-image: url("../img/photo.jpg");
   background-size: cover;
   height: 450px;
   width: 25%; }
-  @media (max-width: 666px) {
+  @media (max-width: 900px) {
     .gal-image5 {
-      height: 82vh;
+      height: 50vh;
       width: 90%;
-      margin: 20px auto; } }
-  @media (max-width: 666px) {
+      margin: 20px auto 0px auto; } }
+  @media (max-width: 760px) {
+    .gal-image5 {
+      margin-top: 39px; } }
+  @media (max-width: 900px) {
     .gal-image5:hover .link {
       transform: scale(1.3); } }
-  @media (max-width: 666px) {
+  @media (max-width: 900px) {
     .gal-image5 .link {
       align-items: center;
       justify-content: center;
@@ -310,6 +360,9 @@ body {
       .gal-image5 .link a img {
         width: 34px;
         height: 34px; } }
+  @media (max-width: 666px) {
+    .gal-image5 .link {
+      margin-bottom: 15px; } }
 
 .gal-image6 {
   width: 50%;
@@ -317,15 +370,22 @@ body {
   background-size: cover;
   height: 450px;
   width: 50%; }
+  @media (max-width: 900px) {
+    .gal-image6 {
+      height: 50vh;
+      width: 90%;
+      margin: 20px auto 0px auto; } }
+  @media (max-width: 760px) {
+    .gal-image6 {
+      margin-top: 39px;
+      margin-bottom: 20px; } }
   @media (max-width: 666px) {
     .gal-image6 {
-      height: 82vh;
-      width: 90%;
-      margin: 20px auto; } }
-  @media (max-width: 666px) {
+      margin-bottom: 20px; } }
+  @media (max-width: 900px) {
     .gal-image6:hover .link {
       transform: scale(1.3); } }
-  @media (max-width: 666px) {
+  @media (max-width: 900px) {
     .gal-image6 .link {
       align-items: center;
       justify-content: center;
@@ -335,6 +395,9 @@ body {
       .gal-image6 .link a img {
         width: 34px;
         height: 34px; } }
+  @media (max-width: 666px) {
+    .gal-image6 .link {
+      margin-bottom: 15px; } }
 
 .lower-navbar {
   width: 100%;

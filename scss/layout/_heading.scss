@@ -5,14 +5,24 @@
   flex-wrap: nowrap;
   height: 30vh;
   color: white;
+  @media (max-width: 960px) {
+    margin-top: 90px;
+  }
+  @media (max-width: 760px) {
+    margin-top: 25px;
+  }
   @media (max-width: 666px) {
-    margin-top: 10px;
+    margin-top: 25px;
   }
   h1 {
     margin: 0;
     font-size: 7.5em;
     font-family: 'Playfair Display', serif;
     @media (max-width: 960px) {
+      font-size: 5em;
+      padding-bottom: 13px;
+    }
+    @media (max-width: 760px) {
       font-size: 3em;
       padding-bottom: 13px;
     }
@@ -25,7 +35,15 @@
     font-family: 'Fjalla One', sans-serif;
     letter-spacing: 5px;
     @media (max-width: 960px) {
-      font-size: .7em;
+      font-size: 1.1em;
+      margin-top: 9px;
+    }
+    @media (max-width: 760px) {
+      font-size: .8em;
+      letter-spacing: 3px;
+    }
+    @media (max-width: 666px) {
+      margin-top: 10px;
     }
   }
   img {
@@ -40,7 +58,7 @@
   }
 
   .orange-box {
-    @media (max-width: 760px) {
+    @media (max-width: 768px) {
       display: none;
     }
     .explore {
@@ -50,6 +68,9 @@
       background: $accent-orange;
       border-radius: 2px;
       margin-top: 110px;
+      @media (max-width: 960px) {
+        margin-top: 10px;
+      }
       p {
         padding-top: 0px;
         margin: 0px;
