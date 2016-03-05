@@ -3,6 +3,9 @@
   background-size: cover;
   width: 100%;
   min-height: 100vh;
+  @media (max-width: 666px) {
+    min-height: 66.5vh;
+  }
 }
 
 .navbar {
@@ -11,6 +14,9 @@
   width: 80%;
   margin: 0 auto;
   justify-content: space-between;
+  @media (max-width: 666px) {
+    width: 90%;
+  }
 
   p {
     color: white;
@@ -47,6 +53,10 @@ ul {
   height: 50px;
   width: 420px;
   justify-content: flex-end;
+  @media (max-width: 960px) {
+    display: none;
+    width: 5%;
+  }
 
   li {
     list-style: none;
@@ -58,9 +68,6 @@ ul {
     padding-top: 15px;
     justify-content: space-between;
     padding: 0 10px;
-    @media (max-width: 960px) {
-      display: none;
-    }
 
     .fa-carat-down {
       color: white;

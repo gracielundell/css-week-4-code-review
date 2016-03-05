@@ -57,6 +57,9 @@
   background-size: cover;
   width: 100%;
   min-height: 100vh; }
+  @media (max-width: 666px) {
+    .wrapper {
+      min-height: 66.5vh; } }
 
 .navbar {
   display: flex;
@@ -64,6 +67,9 @@
   width: 80%;
   margin: 0 auto;
   justify-content: space-between; }
+  @media (max-width: 666px) {
+    .navbar {
+      width: 90%; } }
   .navbar p {
     color: white;
     font-size: 25px;
@@ -93,6 +99,10 @@ ul {
   height: 50px;
   width: 420px;
   justify-content: flex-end; }
+  @media (max-width: 960px) {
+    ul {
+      display: none;
+      width: 5%; } }
   ul li {
     list-style: none;
     display: inline;
@@ -103,9 +113,6 @@ ul {
     padding-top: 15px;
     justify-content: space-between;
     padding: 0 10px; }
-    @media (max-width: 960px) {
-      ul li {
-        display: none; } }
     ul li .fa-carat-down {
       color: white; }
 
@@ -115,6 +122,9 @@ ul {
   flex-wrap: nowrap;
   height: 30vh;
   color: white; }
+  @media (max-width: 666px) {
+    .heading {
+      margin-top: 10px; } }
   .heading h1 {
     margin: 0;
     font-size: 7.5em;
