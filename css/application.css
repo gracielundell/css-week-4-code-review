@@ -190,14 +190,20 @@ body {
       height: 82vh;
       width: 90%;
       margin: 20px auto; } }
-  @media (max-width: 550px) {
-    .gal-image1 {
-      height: 1050px; } }
+  @media (max-width: 666px) {
+    .gal-image1:hover .link {
+      transform: scale(1.3); } }
 
 @media (max-width: 666px) {
   .link {
     align-items: center;
-    justify-content: center; } }
+    justify-content: center;
+    padding: 20px;
+    width: 30px;
+    height: 30px; }
+    .link a img {
+      width: 34px;
+      height: 34px; } }
 
 .gal-image2 {
   background-image: url("../img/camp.jpg");
@@ -209,6 +215,19 @@ body {
       height: 82vh;
       width: 90%;
       margin: 20px auto; } }
+  @media (max-width: 666px) {
+    .gal-image2:hover .link {
+      transform: scale(1.3); } }
+  @media (max-width: 666px) {
+    .gal-image2 .link {
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      width: 30px;
+      height: 30px; }
+      .gal-image2 .link a img {
+        width: 34px;
+        height: 34px; } }
 
 .gal-image3 {
   background-image: url("../img/lady.jpg");
@@ -220,6 +239,19 @@ body {
       height: 82vh;
       width: 90%;
       margin: 20px auto; } }
+  @media (max-width: 666px) {
+    .gal-image3:hover .link {
+      transform: scale(1.3); } }
+  @media (max-width: 666px) {
+    .gal-image3 .link {
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      width: 30px;
+      height: 30px; }
+      .gal-image3 .link a img {
+        width: 34px;
+        height: 34px; } }
 
 .gal-image4 {
   background-image: url("../img/canoe.jpg");
@@ -231,6 +263,19 @@ body {
       height: 82vh;
       width: 90%;
       margin: 20px auto; } }
+  @media (max-width: 666px) {
+    .gal-image4:hover .link {
+      transform: scale(1.3); } }
+  @media (max-width: 666px) {
+    .gal-image4 .link {
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      width: 30px;
+      height: 30px; }
+      .gal-image4 .link a img {
+        width: 34px;
+        height: 34px; } }
 
 .gal-image5 {
   background-image: url("../img/photo.jpg");
@@ -242,6 +287,19 @@ body {
       height: 82vh;
       width: 90%;
       margin: 20px auto; } }
+  @media (max-width: 666px) {
+    .gal-image5:hover .link {
+      transform: scale(1.3); } }
+  @media (max-width: 666px) {
+    .gal-image5 .link {
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      width: 30px;
+      height: 30px; }
+      .gal-image5 .link a img {
+        width: 34px;
+        height: 34px; } }
 
 .gal-image6 {
   width: 50%;
@@ -254,6 +312,19 @@ body {
       height: 82vh;
       width: 90%;
       margin: 20px auto; } }
+  @media (max-width: 666px) {
+    .gal-image6:hover .link {
+      transform: scale(1.3); } }
+  @media (max-width: 666px) {
+    .gal-image6 .link {
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      width: 30px;
+      height: 30px; }
+      .gal-image6 .link a img {
+        width: 34px;
+        height: 34px; } }
 
 .lower-navbar {
   width: 100%;

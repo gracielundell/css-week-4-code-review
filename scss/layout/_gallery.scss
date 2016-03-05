@@ -30,11 +30,13 @@ body {
     @include dimensions(82vh, 90%);
     margin: 20px auto;
   }
-  @media (max-width: 550px) {
-    height: 1050px;
-  }
   &:hover {
     @extend %circle-hover;
+      @media (max-width: 666px) {
+        .link {
+          transform: scale(1.3);
+        }
+      }
     }
   }
   .link {
@@ -42,6 +44,15 @@ body {
     @media (max-width: 666px) {
       align-items: center;
       justify-content: center;
+      padding: 20px;
+      width: 30px;
+      height: 30px;
+      a {
+        img {
+          width: 34px;
+          height: 34px;
+        }
+      }
     }
   }
 
@@ -57,9 +68,27 @@ body {
   }
   &:hover {
     @extend %circle-hover;
+    @media (max-width: 666px) {
+      .link {
+        transform: scale(1.3);
+      }
+    }
   }
   .link {
     @extend %link-flex;
+    @media (max-width: 666px) {
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      width: 30px;
+      height: 30px;
+      a {
+        img {
+          width: 34px;
+          height: 34px;
+        }
+      }
+    }
   }
 }
 
@@ -72,12 +101,29 @@ body {
     @include dimensions(82vh, 90%);
     margin: 20px auto;
   }
-
   &:hover {
     @extend %circle-hover;
+    @media (max-width: 666px) {
+      .link {
+        transform: scale(1.3);
+      }
+    }
   }
   .link {
     @extend %link-flex;
+    @media (max-width: 666px) {
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      width: 30px;
+      height: 30px;
+      a {
+        img {
+          width: 34px;
+          height: 34px;
+        }
+      }
+    }
   }
 }
 
@@ -92,9 +138,27 @@ body {
   }
   &:hover {
     @extend %circle-hover;
+    @media (max-width: 666px) {
+      .link {
+        transform: scale(1.3);
+      }
+    }
   }
   .link {
     @extend %link-flex;
+    @media (max-width: 666px) {
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      width: 30px;
+      height: 30px;
+      a {
+        img {
+          width: 34px;
+          height: 34px;
+        }
+      }
+    }
   }
 }
 
@@ -109,9 +173,27 @@ body {
   }
   &:hover {
     @extend %circle-hover;
+    @media (max-width: 666px) {
+      .link {
+        transform: scale(1.3);
+      }
+    }
   }
   .link {
     @extend %link-flex;
+    @media (max-width: 666px) {
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      width: 30px;
+      height: 30px;
+      a {
+        img {
+          width: 34px;
+          height: 34px;
+        }
+      }
+    }
   }
 }
 
@@ -127,8 +209,26 @@ body {
   }
   &:hover {
     @extend %circle-hover;
+    @media (max-width: 666px) {
+      .link {
+        transform: scale(1.3);
+      }
+    }
   }
   .link {
     @extend %link-flex;
+    @media (max-width: 666px) {
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      width: 30px;
+      height: 30px;
+      a {
+        img {
+          width: 34px;
+          height: 34px;
+        }
+      }
+    }
   }
 }
