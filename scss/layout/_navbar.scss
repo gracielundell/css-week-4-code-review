@@ -28,11 +28,9 @@
     }
   }
   img {
-    width:50px;
-    height: 50px;
+    @include dimensions(50px, 50px);
     @media (max-width: 960px) {
-      width: 40px;
-      height: 40px;
+      @include dimensions(40px, 40px);
     }
   }
 
@@ -50,8 +48,7 @@
 ul {
   padding: 0;
   display: flex;
-  height: 50px;
-  width: 420px;
+  @include dimensions(50px, 420px);
   justify-content: flex-end;
   @media (max-width: 960px) {
     display: none;

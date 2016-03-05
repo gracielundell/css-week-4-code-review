@@ -8,3 +8,22 @@
   height: $height;
   width: $width;
 }
+
+@mixin gal-hr-p-row($margin-bottom) {
+  hr {
+    align-self: flex-start;
+    background: $accent-orange;
+    border: 2px solid $accent-orange;
+    margin-left: 20px;
+    width: 40px;
+  }
+  p {
+    align-self: flex-start;
+    padding-left: 20px;
+    color: white;
+    font-size: 20px;
+    margin-bottom: $margin-bottom;
+    margin-top: 0px;
+    text-transform: uppercase;
+  }
+}

@@ -11,9 +11,6 @@
   @media (max-width: 760px) {
     margin-top: 25px;
   }
-  @media (max-width: 666px) {
-    margin-top: 25px;
-  }
   h1 {
     margin: 0;
     font-size: 7.5em;
@@ -77,8 +74,7 @@
       }
     }
     img.point {
-      height: 14px;
-      width: 50px;
+      @include dimensions(14px, 50px);
       align-self: center;
     }
   }

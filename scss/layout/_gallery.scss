@@ -28,21 +28,18 @@ body {
   @extend %gal-image-flex;
   background-image: url('#{$path-img}/raft.jpg');
   @include img-size(cover, 450px, 50%);
-  @extend %gal-hr-p;
+  @include gal-hr-p-row(60px);
   @media (max-width: 900px) {
     @include dimensions(50vh, 90%);
     margin: 20px auto 0px auto;
+    @include gal-hr-p-row(30px);
   }
   @media (max-width: 760px) {
     margin-top: 39px;
+    @include gal-hr-p-row(30px);
   }
   &:hover {
     @extend %circle-hover;
-      @media (max-width: 900px) {
-        .link {
-          transform: scale(1.3);
-        }
-      }
     }
   }
   .link {
@@ -51,14 +48,15 @@ body {
       align-items: center;
       justify-content: center;
       padding: 20px;
-      width: 30px;
-      height: 30px;
+      @include dimensions(30px, 30px);
       a {
         img {
-          width: 34px;
-          height: 34px;
+          @include dimensions(34px, 34px);
         }
       }
+    }
+    @media (max-width: 900px) {
+
     }
     @media (max-width: 666px) {
       margin-bottom: 15px;
@@ -69,22 +67,19 @@ body {
 .gal-image2 {
   @extend %gal-image-flex;
   background-image: url('#{$path-img}/camp.jpg');
-  @extend %gal-hr-p;
+  @include gal-hr-p-row(60px);
   @include img-size(cover, 450px, 25%);
   @media (max-width: 900px) {
     @include dimensions(50vh, 90%);
     margin: 20px auto 0px auto;
+    @include gal-hr-p-row(30px);
   }
   @media (max-width: 760px) {
     margin-top: 39px;
+    @include gal-hr-p-row(30px);
   }
   &:hover {
     @extend %circle-hover;
-    @media (max-width: 900px) {
-      .link {
-        transform: scale(1.3);
-      }
-    }
   }
   .link {
     @extend %link-flex;
@@ -92,12 +87,10 @@ body {
       align-items: center;
       justify-content: center;
       padding: 20px;
-      width: 30px;
-      height: 30px;
+      @include dimensions(30px, 30px);
       a {
         img {
-          width: 34px;
-          height: 34px;
+          @include dimensions(34px, 34px);
         }
       }
     }
@@ -110,22 +103,19 @@ body {
 .gal-image3 {
   @extend %gal-image-flex;
   background-image: url('#{$path-img}/lady.jpg');
-  @extend %gal-hr-p;
+  @include gal-hr-p-row(60px);
   @include img-size(cover, 450px, 25%);
   @media (max-width: 900px) {
     @include dimensions(50vh, 90%);
     margin: 20px auto 0px auto;
+    @include gal-hr-p-row(30px);
   }
   @media (max-width: 760px) {
     margin-top: 39px;
+    @include gal-hr-p-row(30px);
   }
   &:hover {
     @extend %circle-hover;
-    @media (max-width: 900px) {
-      .link {
-        transform: scale(1.3);
-      }
-    }
   }
   .link {
     @extend %link-flex;
@@ -133,12 +123,10 @@ body {
       align-items: center;
       justify-content: center;
       padding: 20px;
-      width: 30px;
-      height: 30px;
+      @include dimensions(30px, 30px);
       a {
         img {
-          width: 34px;
-          height: 34px;
+          @include dimensions(34px, 34px);
         }
       }
     }
@@ -152,7 +140,7 @@ body {
   @extend %gal-image-flex;
   background-image: url('#{$path-img}/canoe.jpg');
   @include img-size(cover, 450px, 25%);
-  @extend %gal-hr-p;
+  @include gal-hr-p-row(30px);
   @media (max-width: 900px) {
     @include dimensions(50vh, 90%);
     margin: 20px auto 0px auto;
@@ -162,11 +150,6 @@ body {
   }
   &:hover {
     @extend %circle-hover;
-    @media (max-width: 900px) {
-      .link {
-        transform: scale(1.3);
-      }
-    }
   }
   .link {
     @extend %link-flex;
@@ -174,12 +157,10 @@ body {
       align-items: center;
       justify-content: center;
       padding: 20px;
-      width: 30px;
-      height: 30px;
+      @include dimensions(30px, 30px);
       a {
         img {
-          width: 34px;
-          height: 34px;
+          @include dimensions(34px, 34px);
         }
       }
     }
@@ -192,7 +173,7 @@ body {
 .gal-image5 {
   @extend %gal-image-flex;
   background-image: url('#{$path-img}/photo.jpg');
-  @extend %gal-hr-p;
+  @include gal-hr-p-row(30px);
   @include img-size(cover, 450px, 25%);
   @media (max-width: 900px) {
     @include dimensions(50vh, 90%);
@@ -203,11 +184,6 @@ body {
   }
   &:hover {
     @extend %circle-hover;
-    @media (max-width: 900px) {
-      .link {
-        transform: scale(1.3);
-      }
-    }
   }
   .link {
     @extend %link-flex;
@@ -215,12 +191,10 @@ body {
       align-items: center;
       justify-content: center;
       padding: 20px;
-      width: 30px;
-      height: 30px;
+      @include dimensions(30px, 30px);
       a {
         img {
-          width: 34px;
-          height: 34px;
+          @include dimensions(34px, 34px);
         }
       }
     }
@@ -235,7 +209,7 @@ body {
   width: 50%;
   background-image: url('#{$path-img}/custom.jpg');
   @include img-size(cover, 450px, 50%);
-  @extend %gal-hr-p;
+  @include gal-hr-p-row(30px);
   @media (max-width: 900px) {
     @include dimensions(50vh, 90%);
     margin: 20px auto 0px auto;
@@ -249,11 +223,6 @@ body {
   }
   &:hover {
     @extend %circle-hover;
-    @media (max-width: 900px) {
-      .link {
-        transform: scale(1.3);
-      }
-    }
   }
   .link {
     @extend %link-flex;
@@ -261,12 +230,10 @@ body {
       align-items: center;
       justify-content: center;
       padding: 20px;
-      width: 30px;
-      height: 30px;
+      @include dimensions(30px, 30px);
       a {
         img {
-          width: 34px;
-          height: 34px;
+          @include dimensions(34px, 34px);
         }
       }
     }
