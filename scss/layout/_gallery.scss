@@ -29,7 +29,9 @@ body {
   @media (max-width: 666px) {
     @include dimensions(82vh, 90%);
     margin: 20px auto;
-    align-items: center;
+  }
+  @media (max-width: 550px) {
+    height: 1050px;
   }
   &:hover {
     @extend %circle-hover;
@@ -37,6 +39,10 @@ body {
   }
   .link {
     @extend %link-flex;
+    @media (max-width: 666px) {
+      align-items: center;
+      justify-content: center;
+    }
   }
 
 

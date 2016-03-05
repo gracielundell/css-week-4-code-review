@@ -189,8 +189,15 @@ body {
     .gal-image1 {
       height: 82vh;
       width: 90%;
-      margin: 20px auto;
-      align-items: center; } }
+      margin: 20px auto; } }
+  @media (max-width: 550px) {
+    .gal-image1 {
+      height: 1050px; } }
+
+@media (max-width: 666px) {
+  .link {
+    align-items: center;
+    justify-content: center; } }
 
 .gal-image2 {
   background-image: url("../img/camp.jpg");
