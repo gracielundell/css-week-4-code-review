@@ -69,36 +69,37 @@
       .navbar img {
         height: 40px;
         width: 40px; } }
-  .navbar i {
+  .navbar .fa-github {
+    color: white;
+    margin: 6px 0 0 10px; }
+  .navbar .fa-bars {
     color: white;
     padding: 10px;
     font-size: 30px; }
     @media (min-width: 960px) {
-      .navbar i {
-        display: none; } }
-
-ul {
-  padding: 0;
-  display: flex;
-  height: 50px;
-  width: 420px;
-  justify-content: flex-end; }
-  @media (max-width: 960px) {
-    ul {
-      display: none;
-      width: 5%; } }
-  ul li {
-    list-style: none;
-    display: inline;
-    text-transform: uppercase;
-    color: white;
-    font-family: 'Fjalla One', sans-serif;
-    margin-left: 10px;
-    padding-top: 15px;
-    justify-content: space-between;
-    padding: 0 10px; }
-    ul li .fa-carat-down {
-      color: white; }
+      .navbar .fa-bars {
+        display: none; }
+        .navbar .fa-bars .fa-github {
+          display: inline; } }
+  .navbar ul {
+    padding: 0;
+    display: flex;
+    height: 50px;
+    width: 420px;
+    justify-content: flex-end; }
+    .navbar ul li {
+      list-style: none;
+      display: inline;
+      text-transform: uppercase;
+      color: white;
+      font-family: 'Fjalla One', sans-serif;
+      margin-left: 10px;
+      padding-top: 15px;
+      justify-content: space-between; }
+      @media (max-width: 960px) {
+        .navbar ul li {
+          display: none;
+          width: 5%; } }
 
 .heading {
   margin-top: 200px;

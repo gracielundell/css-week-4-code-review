@@ -34,40 +34,41 @@
     }
   }
 
-  i {
+  .fa-github {
+    color: white;
+    margin: 6px 0 0 10px;
+  }
+
+  .fa-bars {
     color: white;
     padding: 10px;
     font-size: 30px;
     @media (min-width: 960px) {
       display: none;
+      .fa-github {
+        display: inline;
+      }
     }
   }
-}
+  ul {
+    padding: 0;
+    display: flex;
+    @include dimensions(50px, 420px);
+    justify-content: flex-end;
 
-
-ul {
-  padding: 0;
-  display: flex;
-  @include dimensions(50px, 420px);
-  justify-content: flex-end;
-  @media (max-width: 960px) {
-    display: none;
-    width: 5%;
-  }
-
-  li {
-    list-style: none;
-    display: inline;
-    text-transform: uppercase;
-    color: white;
-    font-family: 'Fjalla One', sans-serif;
-    margin-left: 10px;
-    padding-top: 15px;
-    justify-content: space-between;
-    padding: 0 10px;
-
-    .fa-carat-down {
+    li {
+      list-style: none;
+      display: inline;
+      text-transform: uppercase;
       color: white;
+      font-family: 'Fjalla One', sans-serif;
+      margin-left: 10px;
+      padding-top: 15px;
+      justify-content: space-between;
+      @media (max-width: 960px) {
+        display: none;
+        width: 5%;
+      }
     }
   }
 }
